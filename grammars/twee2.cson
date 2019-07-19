@@ -93,40 +93,45 @@
         'patterns': [
           ## ALL Colors Set to Serve vautour-dark-syntax && one-dark-syntax
           #* Change colors if you want customizations
-          # Macro BASICS https://twine2.neocities.org/1.html#macro_set PURPLE
+          # Macro BASICS https://twine2.neocities.org/3.html#macro_set PURPLE
           {
-            "match": "(set|put|move|print|display|if|unless|else-if|else|either)\:"
+            "match": "(set|put|move|print|display|if|unless|else-if|else|for|loop|either|enchant)\:"
             "name": "keyword.control.twee2"
           },
-          # Macro DATA STRUCTURE https://twine2.neocities.org/1.html#macro_a ORANGE
+          # Macro DATA STRUCTURE/COLOR https://twine2.neocities.org/3.html#macro_a ORANGE
           {
-            "match": "(a|array|datamap|dataset|count|datanames|datavalues|range|rotated|shuffled|sorted|subarray)\\:"
+            "match": "(a|array|dm|datamap|ds|dataset|all-pass|altered|count|dataentries|datanames|datavalues|find|folded|interlaced|none-pass|range|repeated|reversed|rotated|shuffled|some-pass|sorted|hsl|hsla|rgb|rgba)\\:"
             "name": "constant.twee2"
           },
-          # Macro DATE and TIME/STRINGS https://twine2.neocities.org/1.html#macro_current-date GREEN
+          # Macro DATE and TIME/STRINGS https://twine2.neocities.org/3.html#macro_current-date GREEN
           {
-            "match": "(current-date|current-time|monthday|weekday|substring|text|string)\\:"
+            "match": "(current-date|current-time|monthday|weekday|lowercase|lowerfirst|str-repeated|string-repeated|str-reversed|string-reversed|str|string|text|uppercase|upperfirst|words)\\:"
             "name": "string.twee2"
           },
-          # Macro GAME STATE/SAVING https://twine2.neocities.org/1.html#macro_history YELLOW
+          # Macro GAME STATE/SAVING https://twine2.neocities.org/3.html#macro_history YELLOW
           {
             "match": "(history|passage|load-game|save-game|saved-games)\\:"
             "name": "entity.class.name.twee2"
           },
-          # Macro LINKS https://twine2.neocities.org/1.html#macro_link BLUE
+          # Macro LINKS/URL/INPUT https://twine2.neocities.org/3.html#macro_link BLUE
           {
-            "match": "(link|link-replace|link-reveal|link-repeat|link-goto|click|click-replace|click-append|click-prepend|mouseover|mouseover-replace|mouseover-append|mouseover-prepend|mouseout|mouseout-replace|mouseout-append|mouseout-prepend|go-to|goto-url|open-url|page-url|reload)\\:"
+            "match": "(link|link-replace|link-reveal|link-repeat|link-goto|link-reveal-goto|link-show|link-undo|click|click-replace|click-append|click-prepend|click-goto|mouseover|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-goto|mouseout|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-goto|go-to|undo|goto-url|open-url|page-url|reload|cycling-link|dropdown)\\:"
             "name": "support.function.any-method.twee2"
           },
-          # Macro LIVE/POPUPS/REVISIONS/STYLING https://twine2.neocities.org/1.html#macro_live PURPLE
+          # Macro LIVE/POPUPS/REVISIONS/SHOWING and HIDING/STYLING https://twine2.neocities.org/3.html#macro_live PURPLE
           {
-            "match": "(live|stop|alert|confirm|prompt|append|prepend|replace|align|background|css|font|hook|text-colour|text-rotate|text-style|transition|colour|t8n-time|t8n)\\:"
+            "match": "(live|event|stop|alert|confirm|prompt|append|prepend|replace|hidden|show|align|background|css|font|hook|hover-style|text-colour|colour|text-color|color|text-rotate|text-style|transition|t8n|transition-time|t8n-time|transition-depart|t8n-depart|transition-arrive|t8n-arrive)\\:"
             "name": "keyword.control.twee2"
           },
-          # Macro MATH/NUMBERS https://twine2.neocities.org/1.html#macro_abs RED
+          # Macro MATH/NUMBERS https://twine2.neocities.org/3.html#macro_abs RED
           {
             "match": "(abs|cos|exp|log|log10|log2|max|min|pow|sign|sin|sqrt|tan|ceil|floor|num|number|random|round)\\:"
             "name": "variable.twee2"
+          },
+          # Macro DEPRECATED https://twine2.neocities.org/3.html#macro_substring
+          {
+            "match": "(substring|subarray)\\:"
+            "name": "invalid.deprecated.twee2"
           },
           # Macro Variables
           {
@@ -249,40 +254,45 @@
         'patterns': [
           ## ALL Colors Set to Serve vautour-dark-syntax && one-dark-syntax
           #* Change colors if you want customizations
-          # Macro BASICS https://twine2.neocities.org/1.html#macro_set PURPLE
+          # Macro BASICS https://twine2.neocities.org/3.html#macro_set PURPLE
           {
-            "match": "(set|put|move|print|display|if|unless|else-if|else|either)\:"
+            "match": "(set|put|move|print|display|if|unless|else-if|else|for|loop|either|enchant)\:"
             "name": "keyword.control.twee2"
           },
-          # Macro DATA STRUCTURE https://twine2.neocities.org/1.html#macro_a ORANGE
+          # Macro DATA STRUCTURE/COLOR https://twine2.neocities.org/3.html#macro_a ORANGE
           {
-            "match": "(a|array|datamap|dataset|count|datanames|datavalues|range|rotated|shuffled|sorted|subarray)\\:"
+            "match": "(a|array|dm|datamap|ds|dataset|all-pass|altered|count|dataentries|datanames|datavalues|find|folded|interlaced|none-pass|range|repeated|reversed|rotated|shuffled|some-pass|sorted|hsl|hsla|rgb|rgba)\\:"
             "name": "constant.twee2"
           },
-          # Macro DATE and TIME/STRINGS https://twine2.neocities.org/1.html#macro_current-date GREEN
+          # Macro DATE and TIME/STRINGS https://twine2.neocities.org/3.html#macro_current-date GREEN
           {
-            "match": "(current-date|current-time|monthday|weekday|substring|text|string)\\:"
+            "match": "(current-date|current-time|monthday|weekday|lowercase|lowerfirst|str-repeated|string-repeated|str-reversed|string-reversed|str|string|text|uppercase|upperfirst|words)\\:"
             "name": "string.twee2"
           },
-          # Macro GAME STATE/SAVING https://twine2.neocities.org/1.html#macro_history YELLOW
+          # Macro GAME STATE/SAVING https://twine2.neocities.org/3.html#macro_history YELLOW
           {
             "match": "(history|passage|load-game|save-game|saved-games)\\:"
             "name": "entity.class.name.twee2"
           },
-          # Macro LINKS https://twine2.neocities.org/1.html#macro_link BLUE
+          # Macro LINKS/URL/INPUT https://twine2.neocities.org/3.html#macro_link BLUE
           {
-            "match": "(link|link-replace|link-reveal|link-repeat|link-goto|click|click-replace|click-append|click-prepend|mouseover|mouseover-replace|mouseover-append|mouseover-prepend|mouseout|mouseout-replace|mouseout-append|mouseout-prepend|go-to|goto-url|open-url|page-url|reload)\\:"
+            "match": "(link|link-replace|link-reveal|link-repeat|link-goto|link-reveal-goto|link-show|link-undo|click|click-replace|click-append|click-prepend|click-goto|mouseover|mouseover-replace|mouseover-append|mouseover-prepend|mouseover-goto|mouseout|mouseout-replace|mouseout-append|mouseout-prepend|mouseout-goto|go-to|undo|goto-url|open-url|page-url|reload|cycling-link|dropdown)\\:"
             "name": "support.function.any-method.twee2"
           },
-          # Macro LIVE/POPUPS/REVISIONS/STYLING https://twine2.neocities.org/1.html#macro_live PURPLE
+          # Macro LIVE/POPUPS/REVISIONS/SHOWING and HIDING/STYLING https://twine2.neocities.org/3.html#macro_live PURPLE
           {
-            "match": "(live|stop|alert|confirm|prompt|append|prepend|replace|align|background|css|font|hook|text-colour|text-rotate|text-style|transition|colour|t8n-time|t8n)\\:"
+            "match": "(live|event|stop|alert|confirm|prompt|append|prepend|replace|hidden|show|align|background|css|font|hook|hover-style|text-colour|colour|text-color|color|text-rotate|text-style|transition|t8n|transition-time|t8n-time|transition-depart|t8n-depart|transition-arrive|t8n-arrive)\\:"
             "name": "keyword.control.twee2"
           },
-          # Macro MATH/NUMBERS https://twine2.neocities.org/1.html#macro_abs RED
+          # Macro MATH/NUMBERS https://twine2.neocities.org/3.html#macro_abs RED
           {
             "match": "(abs|cos|exp|log|log10|log2|max|min|pow|sign|sin|sqrt|tan|ceil|floor|num|number|random|round)\\:"
             "name": "variable.twee2"
+          },
+          # Macro DEPRECATED https://twine2.neocities.org/3.html#macro_substring
+          {
+            "match": "(substring|subarray)\\:"
+            "name": "invalid.deprecated.twee2"
           },
           # Macro Variables
           {
