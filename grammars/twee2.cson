@@ -146,7 +146,7 @@
           },
           # Single Quotes
           {
-            "match": "('[^']*')",
+            "match": "(?<!\\w)('[^']*')",
             "name": "string.quoted.single.twee2"
           },
           # Double Quotes
@@ -307,7 +307,7 @@
           },
           # Single Quotes
           {
-            "match": "('[^']*')",
+            "match": "(?<!\\w)('[^']*')",
             "name": "string.quoted.single.twee2"
           },
           # Double Quotes
