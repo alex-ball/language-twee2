@@ -154,6 +154,16 @@
             "match": "(\"[^\"]*\")",
             "name": "string.quoted.double.twee2"
           },
+          #it
+          {
+            "match": "\\bit\\b",
+            "name": "variable.language.self.twee2"
+          },
+          #time
+          {
+            "match": "\\btime\\b",
+            "name": "variable.language.time.twee2"
+          },
           #constants
           {
             "match": "\\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\\.[0-9]+)?))\\b",
@@ -314,6 +324,16 @@
           {
             "match": "(\"[^\"]*\")",
             "name": "string.quoted.double.twee2"
+          },
+          #it
+          {
+            "match": "\\bit\\b",
+            "name": "variable.language.self.twee2"
+          },
+          #time
+          {
+            "match": "\\btime\\b",
+            "name": "variable.language.time.twee2"
           },
           #constants
           {
