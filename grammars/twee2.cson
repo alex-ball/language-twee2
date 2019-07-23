@@ -135,7 +135,7 @@
           },
           # Macro Variables
           {
-            "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+            "match": "(\\$\\b|\\b_)([A-Za-z_][A-Za-z0-9_]*)\\b",
             "name": "variable.twee2"
           },
           # Hook Variables
@@ -183,7 +183,7 @@
       },
       ## Variables
       {
-        "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+        "match": "(\\$\\b|\\b_)([A-Za-z_][A-Za-z0-9_]*)\\b",
         "name": "variable.twee2"
       },
       ## Passage Links
@@ -296,7 +296,7 @@
           },
           # Macro Variables
           {
-            "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+            "match": "(\\$\\b|\\b_)([A-Za-z_][A-Za-z0-9_]*)\\b",
             "name": "variable.twee2"
           },
           # Hook Variables
@@ -440,7 +440,7 @@
       },
       ## Variables
       {
-        "match": "\\$\\b([A-Za-z_][A-Za-z0-9_]*)\\b",
+        "match": "(\\$\\b|\\b_)([A-Za-z_][A-Za-z0-9_]*)\\b",
         "name": "variable.twee2"
       },
       ## Passage Links
